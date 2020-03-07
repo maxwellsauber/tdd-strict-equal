@@ -1,16 +1,21 @@
 const strictEquals = (numOne, numTwo) => {
-  //return false //passes 3/4
-  //return true //fails 3/4
-  //const checkNumOne = Number(numOne) // making them numbers doesn't seem to help, parseInt didnt help either
-  // const checkNumTwo = Number(numTwo)
 
-  console.log(parseInt(numOne))
-  if (numOne == numTwo) 
-  {
-    return true
-  }
-  else{
+  //BELOW WORKS for INTs
+  //TO DO: UPDATE TO CHECK TYPE
+  //Thinking switch statment and a check function //REFACTORRRRR
+
+  // Need two more tests, Two equal strings, two not equal
+  if (typeof numOne == 'string' || typeof numTwo == 'string') 
+  { 
     return false
+  }else{
+    if (numOne == numTwo) {
+      return true
+    }
+    else {
+      return false
+    }
+
   }
 }
 

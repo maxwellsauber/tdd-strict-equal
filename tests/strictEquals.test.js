@@ -5,13 +5,12 @@ const strictEquals = require('../strictEquals')
 
 describe('Equals', () => {
   describe('strictEquals', () => {
-    it('returns true if both paramaters ARE NOT equal OR integers', () => {
+    it('returns true if BOTH paramaters ARE NOT equal OR integers, BUT are loosely equal', () => {
       const checkNumberOne = '5'
       const checkNumberTwo = 5
 
       const checkResult = strictEquals(checkNumberOne, checkNumberTwo)
 
-      // Test Data shoud return false - both test items are not INT.
       expect(checkResult).to.equal(false)
     })
     it('returns true if both paramaters ARE NOT equal OR integers', () => {
@@ -20,7 +19,6 @@ describe('Equals', () => {
 
       const checkResult = strictEquals(checkNumberOne, checkNumberTwo)
 
-      // Test Data shoud return false - both test items are not INT.
       expect(checkResult).to.equal(false)
     })
     it('returns true if both paramaters ARE NOT equal integers', () => {
@@ -29,7 +27,6 @@ describe('Equals', () => {
 
       const checkResult = strictEquals(checkNumberOne, checkNumberTwo)
 
-      // Test Data shoud return false - both test items are not EQUAL.
       expect(checkResult).to.equal(false)
     })
     it('returns true if both paramaters ARE equal integers', () => {
@@ -38,7 +35,6 @@ describe('Equals', () => {
 
       const checkResult = strictEquals(checkNumberOne, checkNumberTwo)
 
-      // Test Data shoud return true - both test items are equal INT.
       expect(checkResult).to.equal(true)
     })
   })
