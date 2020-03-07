@@ -6,8 +6,8 @@ const strictEquals = require('../strictEquals')
 describe('Equals', () => {
   describe('strictEquals', () => {
     it('returns true if both paramaters ARE NOT equal OR integers', () => {
-      const checkNumberOne = 5
-      const checkNumberTwo = '5'
+      const checkNumberOne = '5'
+      const checkNumberTwo = 5
 
       const checkResult = strictEquals(checkNumberOne, checkNumberTwo)
 
