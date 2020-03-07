@@ -1,21 +1,18 @@
-const strictEquals = (numOne, numTwo) => {
+const strictEquals = (valOne, valTwo) => {
 
-  //BELOW WORKS for INTs
-  //TO DO: UPDATE TO CHECK TYPE
-  //Thinking switch statment and a check function //REFACTORRRRR
-
-  // Need two more tests, Two equal strings, two not equal
-  if (typeof numOne == 'string' || typeof numTwo == 'string') 
-  { 
+  if (typeof valOne == 'string' && typeof valTwo == 'number') { 
     return false
-  }else{
-    if (numOne == numTwo) {
+  } 
+  else if (typeof valOne == 'number' && typeof valTwo == 'string') {
+    return false
+  }
+  else{
+    if (valOne == valTwo) {
       return true
     }
     else {
       return false
     }
-
   }
 }
 
