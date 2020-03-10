@@ -21,7 +21,7 @@ describe('Equals', () => {
 
       expect(checkResult).to.equal(false)
     })
-    it('returns false when given equal values of different types', () => {
+    it('returns false when given equal values of different type', () => {
       const checkValueOne = '5'
       const checkValueTwo = 5
 
@@ -29,7 +29,7 @@ describe('Equals', () => {
 
       expect(checkResult).to.equal(false)
     })
-    it('returns false when given unequal values of different types', () => {
+    it('returns false when given unequal values of different type', () => {
       const checkValueOne = 'WOOT'
       const checkValueTwo = true
 
