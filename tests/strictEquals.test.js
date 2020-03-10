@@ -13,7 +13,7 @@ describe('Equals', () => {
 
       expect(checkResult).to.equal(true)
     })
-    it('returns fale when given unequal values of the same type', () => {
+    it('returns false when given unequal values of the same type', () => {
       const checkValueOne = 42
       const checkValueTwo = 7
 
